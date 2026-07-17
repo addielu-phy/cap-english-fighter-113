@@ -461,7 +461,9 @@ window.ENGLISH_QUESTIONS = [
     "images": [
       "assets/questions/q034.webp"
     ],
-    "contextImages": [],
+    "contextImages": [
+      "assets/questions/context-p10-top.webp"
+    ],
     "explanation": "末段明確寫道，創辦人不只想給難民工作，還希望最優秀的員工最後能 buy the restaurant。由此可知餐廳未來可能賣給員工，正解是(B)。",
     "trap": "餐廳是把奧地利與敘利亞料理結合，不是從敘利亞搬來；文中也未提烹飪課或把它定位為敘利亞人的重要聚會場所。"
   },
@@ -474,7 +476,9 @@ window.ENGLISH_QUESTIONS = [
     "images": [
       "assets/questions/q035.webp"
     ],
-    "contextImages": [],
+    "contextImages": [
+      "assets/questions/context-p10-top.webp"
+    ],
     "explanation": "前句說有些奧地利人把難民視為問題，擔心工作被搶且感到不安全；but 之後 Rohla 與 Kreytenberg 說難民不必成為問題。兩方立場相反，因此 beg to differ 表示不同意，選(A)。",
     "trap": "不可只依 differ 的字面聯想到外表不同；要利用轉折詞 But 與冒號後的反方主張，判定這是禮貌表達「不贊同」。"
   },

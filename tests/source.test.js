@@ -25,6 +25,24 @@ test("第22與23題共用Philip/Jason完整短文圖", () => {
   assert.ok(fs.existsSync(localPath), localPath);
 });
 
+test("第22至43題的所有官方題組都掛上完整共用資料", () => {
+  const groups = [
+    { numbers: [22, 23], contexts: ["context-p04-philip-jason.webp"] },
+    { numbers: [24, 25], contexts: ["context-p05-top.webp"] },
+    { numbers: [26, 27], contexts: ["context-p06-top.webp"] },
+    { numbers: [28, 29], contexts: ["context-p07-top.webp"] },
+    { numbers: [30, 31, 32], contexts: ["context-p08.webp"] },
+    { numbers: [33, 34, 35], contexts: ["context-p10-top.webp"] },
+    { numbers: [36, 37, 38, 39], contexts: ["context-p12.webp"] },
+    { numbers: [40, 41, 42, 43], contexts: ["context-p14.webp", "context-p15-top.webp"] }
+  ];
+  for (const group of groups) {
+    for (const number of group.numbers) {
+      assert.deepEqual(question(number).contextImages.map((value) => path.basename(value)), group.contexts, `q${number}`);
+    }
+  }
+});
+
 test("生成題庫逐題等於官方映射與教學meta", () => {
   assert.equal(generated.length, 43);
   for (const item of generated) {

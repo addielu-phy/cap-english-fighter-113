@@ -439,7 +439,9 @@
       "images": [
         "assets/cap/113/english-reading/q034.webp"
       ],
-      "contextImages": [],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p10-top.webp"
+      ],
       "sourcePage": 11
     },
     {
@@ -451,7 +453,9 @@
       "images": [
         "assets/cap/113/english-reading/q035.webp"
       ],
-      "contextImages": [],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p10-top.webp"
+      ],
       "sourcePage": 11
     },
     {
