@@ -124,6 +124,35 @@ test("所有52張題圖與共用文章皆可由瀏覽器完整解碼", { timeout
   await context.close();
 });
 
+test("八組官方共用文章都能在實際題目UI依序顯示", { timeout: 60000 }, async (t) => {
+  if (!browser) return t.skip("找不到Edge/Chromium");
+  const { context, page, errors } = await deterministicPage();
+  const groups = [
+    [22, ["context-p04-philip-jason.webp"]],
+    [24, ["context-p05-top.webp"]],
+    [26, ["context-p06-top.webp"]],
+    [28, ["context-p07-top.webp"]],
+    [30, ["context-p08.webp"]],
+    [33, ["context-p10-top.webp"]],
+    [36, ["context-p12.webp"]],
+    [40, ["context-p14.webp", "context-p15-top.webp"]]
+  ];
+  for (const [number, contexts] of groups) {
+    const id = `113-eng-q${String(number).padStart(2, "0")}`;
+    await page.evaluate((wrongId) => localStorage.setItem("capEnglishFighter113_wrong_v1", JSON.stringify([wrongId])), id);
+    await page.reload({ waitUntil: "networkidle" });
+    await page.getByRole("button", { name: /PRESS START/ }).click();
+    await page.getByRole("button", { name: /重練歷史錯題 1/ }).click();
+    await page.waitForFunction(() => [...document.querySelectorAll("#questionMedia img")].every((image) => image.complete && image.naturalWidth > 0));
+    assert.equal((await page.locator("#questionNumber").textContent()).trim(), `113會考第${number}題`);
+    assert.equal(await page.locator(".context-label").count(), contexts.length);
+    const names = await page.locator("#questionMedia img").evaluateAll((images) => images.map((image) => image.src.split("/").pop()));
+    assert.deepEqual(names, [...contexts, `q${String(number).padStart(3, "0")}.webp`]);
+  }
+  assert.deepEqual(errors, []);
+  await context.close();
+});
+
 test("桌機可完成選角、燈箱、文法護盾、答對攻擊與雙共用題組", { timeout: 45000 }, async (t) => {
   if (!browser) return t.skip("找不到Edge/Chromium");
   const { context, page, errors } = await deterministicPage();
