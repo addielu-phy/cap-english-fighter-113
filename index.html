@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#130b24">
+  <meta name="description" content="用113年國中教育會考英語閱讀題進行單人格鬥挑戰。">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23130b24'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial' font-weight='900' font-size='42' fill='%23ffd166'%3EE%3C/text%3E%3C/svg%3E">
+  <title>英語格鬥｜113會考英語閱讀挑戰</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+
+  <header class="topbar" aria-label="遊戲工具列">
+    <button class="brand-button" id="homeButton" type="button" aria-label="回到入口畫面">
+      <span class="brand-mark" aria-hidden="true">📚</span><span>ENGLISH FIGHTER</span>
+    </button>
+    <div class="toolbar" role="toolbar" aria-label="顯示與音效設定">
+      <a class="year-link" href="https://addielu-phy.github.io/cap-english-fighter-years/">選擇年份</a>
+      <button id="soundButton" type="button" aria-pressed="true" title="切換音效">🔊</button>
+      <button id="motionButton" type="button" aria-pressed="false" title="切換減少動態">〰️</button>
+      <button id="contrastButton" type="button" aria-pressed="false" title="切換高對比">◐</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="splash screen" id="splashScreen" aria-labelledby="splashTitle">
+      <div class="speed-lines" aria-hidden="true"></div>
+      <div class="fighter fighter-left" aria-hidden="true">
+        <div class="fighter-aura"></div><div class="fighter-icon">🗡️</div>
+        <span>WORD KNIGHT</span><small>字彙連擊</small>
+      </div>
+      <div class="fighter fighter-right" aria-hidden="true">
+        <div class="fighter-aura"></div><div class="fighter-icon">👾</div>
+        <span>EXAM BOSS</span><small>語意黑洞</small>
+      </div>
+      <div class="splash-copy">
+        <p class="eyebrow">113 CAP ENGLISH READING ARCADE</p>
+        <h1 id="splashTitle"><span>ENGLISH</span> <strong>FIGHTER</strong></h1>
+        <p class="zh-title">英語格鬥</p>
+        <p class="tagline">讀懂線索，擊破語意黑洞。每一道錯題都會變成新技能。</p>
+        <button class="press-start" id="pressStart" type="button">
+          <b>PRESS START</b><span>開始113年會考英語閱讀挑戰</span>
+        </button>
+        <p class="source-mini">43題官方閱讀題面 · 不蒐集個資 · 手機可玩</p>
+      </div>
+      <div class="ticker" aria-hidden="true">VOCABULARY　◆　GRAMMAR　◆　CLOZE　◆　READING　◆　INFERENCE　◆　MAIN IDEA</div>
+    </section>
+
+    <section class="setup screen" id="setupScreen" hidden aria-labelledby="setupTitle">
+      <div class="section-heading">
+        <p class="eyebrow">PLAYER SELECT</p>
+        <h1 id="setupTitle">選擇你的英語鬥士</h1>
+        <p>每位角色都有不同被動與大招。完整收錄113年會考英語閱讀43題。</p>
+      </div>
+      <div class="fighter-grid" id="fighterGrid" role="radiogroup" aria-label="選擇角色"></div>
+      <section class="mode-panel" aria-labelledby="modeTitle">
+        <div>
+          <span class="step">02</span>
+          <h2 id="modeTitle">英語閱讀生存戰</h2>
+          <p>每場隨機12題｜完整題庫43題｜每題75秒｜完成後可重練錯題</p>
+        </div>
+        <div class="setup-actions">
+          <button class="secondary-button" id="retryWrongButton" type="button">重練歷史錯題 <span id="wrongCount">0</span></button>
+          <button class="primary-button" id="startBattleButton" type="button">開始對戰 <span aria-hidden="true">▶</span></button>
+        </div>
+      </section>
+      <p class="legal-note">題面節錄自<a href="https://cap.rcpet.edu.tw/exam/113/113exam.html" target="_blank" rel="noopener noreferrer">113年國中教育會考英語閱讀公開試題</a>，本站為非官方教學試作。</p>
+    </section>
+
+    <section class="battle screen" id="battleScreen" hidden aria-labelledby="battleTitle">
+      <h1 class="sr-only" id="battleTitle">113年會考英語閱讀格鬥對戰</h1>
+      <div class="hud">
+        <article class="combatant player-card">
+          <div class="portrait" id="playerPortrait" aria-hidden="true">🗡️</div>
+          <div class="combatant-info">
+            <div class="name-row"><strong id="playerName">字彙騎士</strong><span id="streakLabel">COMBO 0</span></div>
+            <div class="bar hp-bar" aria-label="玩家生命值"><span id="playerHpBar"></span></div>
+            <div class="bar-caption"><span>HP</span><output id="playerHpText">100 / 100</output></div>
+          </div>
+        </article>
+        <div class="round-badge"><span>ROUND</span><strong id="roundNumber">1</strong><small id="roundTotal">/12</small></div>
+        <article class="combatant boss-card">
+          <div class="combatant-info">
+            <div class="name-row"><strong>會考語意黑洞</strong><span>BOSS</span></div>
+            <div class="bar hp-bar boss-hp" aria-label="魔王生命值"><span id="bossHpBar"></span></div>
+            <div class="bar-caption"><span>HP</span><output id="bossHpText">144 / 144</output></div>
+          </div>
+          <div class="portrait" aria-hidden="true">👾</div>
+        </article>
+      </div>
+
+      <div class="arena" id="arena">
+        <div class="arena-player" id="arenaPlayer" aria-hidden="true">🗡️</div>
+        <div class="impact-text" id="impactText" aria-live="polite"></div>
+        <div class="arena-boss" id="arenaBoss" aria-hidden="true">👾</div>
+      </div>
+
+      <section class="question-panel" aria-labelledby="questionMeta">
+        <div class="question-topline">
+          <div id="questionMeta"><span class="unit-chip" id="unitChip">字彙</span><span id="questionNumber">113會考第1題</span><span id="difficultyChip">基礎</span></div>
+          <div class="timer" aria-label="本題剩餘時間"><span id="timerText">75</span><small>SEC</small></div>
+        </div>
+        <div class="timer-track" aria-hidden="true"><span id="timerBar"></span></div>
+        <div class="question-media" id="questionMedia"></div>
+        <p class="zoom-hint">手機可在題圖內左右滑動 · 點圖可放大閱讀</p>
+        <div class="answer-grid" id="answerGrid" aria-label="選擇答案"></div>
+        <div class="skill-row">
+          <div class="energy-wrap">
+            <span>大招能量</span>
+            <div class="bar energy-bar"><span id="energyBar"></span></div>
+            <output id="energyText">0%</output>
+          </div>
+          <button class="special-button" id="specialButton" type="button" disabled>⚡ 大招尚未充滿</button>
+        </div>
+      </section>
+
+      <section class="feedback-panel" id="feedbackPanel" hidden aria-live="polite">
+        <div class="feedback-verdict" id="feedbackVerdict"></div>
+        <div>
+          <h2 id="feedbackTitle">答題結果</h2>
+          <p id="feedbackExplanation"></p>
+          <p class="trap" id="feedbackTrap"></p>
+        </div>
+        <button class="primary-button" id="nextButton" type="button">下一回合 ▶</button>
+      </section>
+    </section>
+
+    <section class="result screen" id="resultScreen" hidden aria-labelledby="resultTitle">
+      <div class="result-card">
+        <p class="eyebrow">BATTLE RESULT</p>
+        <div class="result-grade" id="resultGrade">A</div>
+        <h1 id="resultTitle">戰鬥結束</h1>
+        <p id="resultMessage"></p>
+        <div class="result-stats">
+          <div><span>答對</span><strong id="correctStat">0</strong></div>
+          <div><span>正確率</span><strong id="accuracyStat">0%</strong></div>
+          <div><span>最高連擊</span><strong id="comboStat">0</strong></div>
+          <div><span>歷史最佳</span><strong id="bestStat">0%</strong></div>
+        </div>
+        <div class="result-actions">
+          <button class="secondary-button" id="resultWrongButton" type="button">重練錯題</button>
+          <button class="primary-button" id="playAgainButton" type="button">再戰一場</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="lightbox" id="lightbox" aria-label="放大題目圖片">
+    <button class="lightbox-close" id="lightboxClose" type="button">關閉 ✕</button>
+    <img id="lightboxImage" alt="放大的會考英語閱讀題目圖片">
+  </dialog>
+
+  <noscript>此遊戲需要JavaScript才能執行。</noscript>
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

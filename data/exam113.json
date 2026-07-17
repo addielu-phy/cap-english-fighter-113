@@ -1,0 +1,574 @@
+{
+  "id": "113-english-reading",
+  "year": 113,
+  "subject": "english-reading",
+  "label": "113 年 英語閱讀",
+  "subjectLabel": "英語閱讀",
+  "icon": "英",
+  "minutes": 60,
+  "questionCount": 43,
+  "gradedCount": 43,
+  "officialIndex": "https://cap.rcpet.edu.tw/exam/113/113exam.html",
+  "questions": [
+    {
+      "id": "1",
+      "number": "1",
+      "kind": "choice",
+      "answer": 0,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q001.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 2
+    },
+    {
+      "id": "2",
+      "number": "2",
+      "kind": "choice",
+      "answer": 2,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q002.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 2
+    },
+    {
+      "id": "3",
+      "number": "3",
+      "kind": "choice",
+      "answer": 1,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q003.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 2
+    },
+    {
+      "id": "4",
+      "number": "4",
+      "kind": "choice",
+      "answer": 1,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q004.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 2
+    },
+    {
+      "id": "5",
+      "number": "5",
+      "kind": "choice",
+      "answer": 3,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q005.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 2
+    },
+    {
+      "id": "6",
+      "number": "6",
+      "kind": "choice",
+      "answer": 3,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q006.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 2
+    },
+    {
+      "id": "7",
+      "number": "7",
+      "kind": "choice",
+      "answer": 1,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q007.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 2
+    },
+    {
+      "id": "8",
+      "number": "8",
+      "kind": "choice",
+      "answer": 3,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q008.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 2
+    },
+    {
+      "id": "9",
+      "number": "9",
+      "kind": "choice",
+      "answer": 2,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q009.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 2
+    },
+    {
+      "id": "10",
+      "number": "10",
+      "kind": "choice",
+      "answer": 3,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q010.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 3
+    },
+    {
+      "id": "11",
+      "number": "11",
+      "kind": "choice",
+      "answer": 2,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q011.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 3
+    },
+    {
+      "id": "12",
+      "number": "12",
+      "kind": "choice",
+      "answer": 0,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q012.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 3
+    },
+    {
+      "id": "13",
+      "number": "13",
+      "kind": "choice",
+      "answer": 0,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q013.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 3
+    },
+    {
+      "id": "14",
+      "number": "14",
+      "kind": "choice",
+      "answer": 0,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q014.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 3
+    },
+    {
+      "id": "15",
+      "number": "15",
+      "kind": "choice",
+      "answer": 2,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q015.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 3
+    },
+    {
+      "id": "16",
+      "number": "16",
+      "kind": "choice",
+      "answer": 3,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q016.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 3
+    },
+    {
+      "id": "17",
+      "number": "17",
+      "kind": "choice",
+      "answer": 2,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q017.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 3
+    },
+    {
+      "id": "18",
+      "number": "18",
+      "kind": "choice",
+      "answer": 3,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q018.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 3
+    },
+    {
+      "id": "19",
+      "number": "19",
+      "kind": "choice",
+      "answer": 0,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q019.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 3
+    },
+    {
+      "id": "20",
+      "number": "20",
+      "kind": "choice",
+      "answer": 2,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q020.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 3
+    },
+    {
+      "id": "21",
+      "number": "21",
+      "kind": "choice",
+      "answer": 1,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q021.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 4
+    },
+    {
+      "id": "22",
+      "number": "22",
+      "kind": "choice",
+      "answer": 3,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q022.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p04-philip-jason.webp"
+      ],
+      "sourcePage": 4
+    },
+    {
+      "id": "23",
+      "number": "23",
+      "kind": "choice",
+      "answer": 2,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q023.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p04-philip-jason.webp"
+      ],
+      "sourcePage": 4
+    },
+    {
+      "id": "24",
+      "number": "24",
+      "kind": "choice",
+      "answer": 2,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q024.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p05-top.webp"
+      ],
+      "sourcePage": 5
+    },
+    {
+      "id": "25",
+      "number": "25",
+      "kind": "choice",
+      "answer": 1,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q025.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p05-top.webp"
+      ],
+      "sourcePage": 5
+    },
+    {
+      "id": "26",
+      "number": "26",
+      "kind": "choice",
+      "answer": 0,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q026.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p06-top.webp"
+      ],
+      "sourcePage": 6
+    },
+    {
+      "id": "27",
+      "number": "27",
+      "kind": "choice",
+      "answer": 3,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q027.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p06-top.webp"
+      ],
+      "sourcePage": 6
+    },
+    {
+      "id": "28",
+      "number": "28",
+      "kind": "choice",
+      "answer": 1,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q028.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p07-top.webp"
+      ],
+      "sourcePage": 7
+    },
+    {
+      "id": "29",
+      "number": "29",
+      "kind": "choice",
+      "answer": 1,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q029.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p07-top.webp"
+      ],
+      "sourcePage": 7
+    },
+    {
+      "id": "30",
+      "number": "30",
+      "kind": "choice",
+      "answer": 0,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q030.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p08.webp"
+      ],
+      "sourcePage": 9
+    },
+    {
+      "id": "31",
+      "number": "31",
+      "kind": "choice",
+      "answer": 3,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q031.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p08.webp"
+      ],
+      "sourcePage": 9
+    },
+    {
+      "id": "32",
+      "number": "32",
+      "kind": "choice",
+      "answer": 0,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q032.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p08.webp"
+      ],
+      "sourcePage": 9
+    },
+    {
+      "id": "33",
+      "number": "33",
+      "kind": "choice",
+      "answer": 0,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q033.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p10-top.webp"
+      ],
+      "sourcePage": 10
+    },
+    {
+      "id": "34",
+      "number": "34",
+      "kind": "choice",
+      "answer": 1,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q034.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 11
+    },
+    {
+      "id": "35",
+      "number": "35",
+      "kind": "choice",
+      "answer": 0,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q035.webp"
+      ],
+      "contextImages": [],
+      "sourcePage": 11
+    },
+    {
+      "id": "36",
+      "number": "36",
+      "kind": "choice",
+      "answer": 1,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q036.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p12.webp"
+      ],
+      "sourcePage": 13
+    },
+    {
+      "id": "37",
+      "number": "37",
+      "kind": "choice",
+      "answer": 1,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q037.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p12.webp"
+      ],
+      "sourcePage": 13
+    },
+    {
+      "id": "38",
+      "number": "38",
+      "kind": "choice",
+      "answer": 2,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q038.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p12.webp"
+      ],
+      "sourcePage": 13
+    },
+    {
+      "id": "39",
+      "number": "39",
+      "kind": "choice",
+      "answer": 2,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q039.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p12.webp"
+      ],
+      "sourcePage": 13
+    },
+    {
+      "id": "40",
+      "number": "40",
+      "kind": "choice",
+      "answer": 0,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q040.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p14.webp",
+        "assets/cap/113/english-reading/context-p15-top.webp"
+      ],
+      "sourcePage": 15
+    },
+    {
+      "id": "41",
+      "number": "41",
+      "kind": "choice",
+      "answer": 1,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q041.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p14.webp",
+        "assets/cap/113/english-reading/context-p15-top.webp"
+      ],
+      "sourcePage": 15
+    },
+    {
+      "id": "42",
+      "number": "42",
+      "kind": "choice",
+      "answer": 1,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q042.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p14.webp",
+        "assets/cap/113/english-reading/context-p15-top.webp"
+      ],
+      "sourcePage": 15
+    },
+    {
+      "id": "43",
+      "number": "43",
+      "kind": "choice",
+      "answer": 3,
+      "options": 4,
+      "images": [
+        "assets/cap/113/english-reading/q043.webp"
+      ],
+      "contextImages": [
+        "assets/cap/113/english-reading/context-p14.webp",
+        "assets/cap/113/english-reading/context-p15-top.webp"
+      ],
+      "sourcePage": 15
+    }
+  ]
+}
